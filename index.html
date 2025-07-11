@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishal | Frontend Developer Portfolio</title>
+  <meta name="description" content="Vishal Tyagi - Frontend Developer Portfolio">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Vishal</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <button id="darkToggle">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section bg-home">
+    <div class="overlay"></div>
+    <div class="container reveal">
+      <h2>Hi, I'm Vishal 👋</h2>
+      <p class="typing">Frontend Developer | JavaScript Enthusiast | UI/UX Explorer</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section bg-about">
+    <div class="container reveal">
+      <h2>About Me</h2>
+      <p>I build clean, fast, and accessible user interfaces using modern frontend technologies.</p>
+      <h3>🛠 Skills</h3>
+      <ul class="skills">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Git</li><li>APIs</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section bg-projects">
+    <div class="container reveal">
+      <h2>Projects</h2>
+      <div class="filter-buttons">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('html')">HTML</button>
+        <button onclick="filterProjects('js')">JavaScript</button>
+      </div>
+      <div class="project-list">
+        <div class="project-card html">
+          <h3>🌤 Weather App</h3>
+          <p>Live weather data using API</p>
+          <a href="https://github.com/vtyagi7850/Weather-repo" target="_blank">View Project</a>
+        </div>
+        <div class="project-card js">
+          <h3>💱 Currency Converter</h3>
+          <p>Real-time currency converter</p>
+          <a href="https://github.com/vtyagi7850/currency-converter1" target="_blank">View Project</a>
+        </div>
+        <div class="project-card js">
+          <h3>📊 Dashboard UI</h3>
+          <p>Responsive admin dashboard</p>
+          <a href="https://github.com/vtyagi7850/Dashboard-UI" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="section bg-resume">
+    <div class="container reveal">
+      <h2>Resume</h2>
+      <p>Download my latest resume in PDF format.</p>
+      <br>
+      <a href="Vishal_Frontend.pdf" class="btn" download>📄 Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section bg-contact">
+    <div class="overlay"></div>
+    <div class="container reveal">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="user_name" placeholder="Your Name" required />
+        <input type="email" name="user_email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+  <!-- Home -->
+<section id="home" class="section bg-home">
+  <div class="overlay"></div>
+  <div class="container reveal">
+    <h2>Hi, I'm Vishal 👋</h2>
+    <p class="typing">Frontend Developer | JavaScript Enthusiast | UI/UX Explorer</p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vishal Tyagi. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
+
